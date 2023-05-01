@@ -22,7 +22,7 @@ def produtos(request):
         'produtos': produtos
     }
     
-    return render(request, 'produtos.html', context)
+    return render(request, 'produtos.html')
 
 
 def produto(request, id):    

@@ -21,14 +21,8 @@ from core import views
 
 
 urlpatterns = [
-    path('painel-admin', admin.site.urls),
+    path('painel-admin/', admin.site.urls),
     path('', include('core.urls')),
 ]
 
 handler404 = views.error404
-
-
-"""
-SUPERUSER:  usuario
-SENHA:      usuario
-"""

@@ -24,7 +24,7 @@ def produtos(request):
     
     # return render(request, 'produtos.html', context)
     
-    return render(request, 'contato.html')
+    return render(request, 'produtos.html')
 
 
 def produto(request, id):    

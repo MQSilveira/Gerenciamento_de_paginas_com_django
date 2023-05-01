@@ -28,6 +28,7 @@ SECRET_KEY = 'django-insecure-whrx=f1&&5!czm-_uahz&%w4@e)%dege*7e8f=t5qpfpzlkxce
 DEBUG = False
 
 ALLOWED_HOSTS = ['projeto-dev-marcos.herokuapp.com']
+# ALLOWED_HOSTS = ['*']
 
 
 # Application definition

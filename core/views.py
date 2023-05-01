@@ -15,16 +15,14 @@ def contato(request):
 
 
 def produtos(request):
-    # produtos = Produto.objects.all()
+    produtos = Produto.objects.all()
     
-    # context = {
-    #     'titulo': 'PRODUTOS DJANGO',
-    #     'produtos': produtos
-    # }
+    context = {
+        'titulo': 'PRODUTOS DJANGO',
+        'produtos': produtos
+    }
     
-    # return render(request, 'produtos.html', context)
-    
-    return render(request, 'produtos.html')
+    return render(request, 'produtos.html', context)
 
 
 def produto(request, id):    

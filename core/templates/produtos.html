@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="jumbotron d-flex align-items-center" style="background-image: url(img/hero-2.jpg)">
+    <div>
+        <h1 class="display-2 mb-4">Lista de Produtos</h1>
+
+        {% if produtos %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for produto in produtos %}
+                <tr>
+                    <td><a class="nav-link" href="{% url 'produto' produto.id %}">{{ produto.nome }} </a></td>
+                    <td>{{ produto.preco }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+
+        <h3> Nenhum produto cadastrado! </h3>
+        {% endif %}
+</div>
+
+
+{% endblock content %}

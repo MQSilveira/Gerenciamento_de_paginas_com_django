@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="jumbotron d-flex align-items-center" style="background-image: url(img/hero-2.jpg)">
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ produto }} </td>
+                <td>Essa é a descrição de {{ produto }}</td>
+                <td> <a class="nav-link" href="{% url 'produtos' %}">Voltar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock content %}
